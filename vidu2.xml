@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<qlsach xmlns="http://tempuri.org/vidu2.xsd">
+	<sach mas="01">
+		<tensach>hihi</tensach>
+		<soluong>2</soluong>
+		<dongia>49</dongia>
+	</sach>
+</qlsach>   

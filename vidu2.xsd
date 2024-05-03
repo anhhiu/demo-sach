@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vidu2"
+    targetNamespace="http://tempuri.org/vidu2.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/vidu2.xsd"
+    xmlns:mstns="http://tempuri.org/vidu2.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:element name="qlsach">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sach" minOccurs="1" maxOccurs="100">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tensach" type="xs:string"/>
+							<xs:element name="soluong">
+								<xs:simpleType>
+									<xs:restriction base="xs:int">
+										<xs:minInclusive value="2"/>
+										<xs:maxInclusive value="100"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="dongia" type="xs:int"/>
+						</xs:sequence>
+						<xs:attribute name="mas" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

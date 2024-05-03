@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cuaHangSach xmlns="http://tempuri.org/bai3.xsd">
+	<TheLoai>
+		<tenTheLoai>truyen cuoi</tenTheLoai>
+		<Sach>
+			<tieuDe>dai gia chan dat</tieuDe>
+			<Tacgia>
+				<idTG>aa12</idTG>
+				<tenTG>hao luka</tenTG>
+				<diaChi>thai nguyen</diaChi>
+				<sdt>097233455</sdt>
+			</Tacgia>
+		</Sach>
+	</TheLoai>
+</cuaHangSach>

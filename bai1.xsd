@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bai1"
+    targetNamespace="http://tempuri.org/bai1.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/bai1.xsd"
+    xmlns:mstns="http://tempuri.org/bai1.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:complexType name="loaiSanPham">
+		<xs:sequence>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="soluong" type="xs:int"/>
+			<xs:element name="loaihang" type="xs:string"/>
+			<xs:element name="dongia" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="cuaHang">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sdt" type="xs:string"/>
+				<xs:element name="sanPham" type="loaiSanPham" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+
+		<xs:unique name="oneSdt">
+			<xs:selector xpath="sdt"/>
+			<xs:field xpath="."/>
+		</xs:unique>
+	</xs:element>
+
+	<xs:simpleType name="loaiId">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z a-z]{2}\d{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="loaiSoLuong">
+		<xs:restriction base="xs:int">
+			<xs:minExclusive value="1"/>
+			<xs:maxExclusive value="200"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="kieuLoaiHang">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="binh thuong"/>
+			<xs:enumeration value="khuyen mai"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="loaiDonGia">
+		<xs:restriction base="xs:decimal">
+			
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>
+
+<!--Giả sử một siêu thị A có địa chỉ XXX và số điện thoại là 123456789 cần quản lý thông tin
+về các mặt hàng có trong siêu thị gồm: Mã sản phẩm, tên hàng, số lượng, loại hàng, đơn
+giá.
+1. Hãy tạo XML schema với các yêu cầu sau:
+Số điện thoại là 10 chữ số
+Mã hàng gồm 4 ký tự, hai ký tự đầu là chữ cái, 2 ký tự tiếp theo là chữ số.
+Số lượng nằm trong khoảng từ 1 đến 200
+Loại hàng là 1 các giá trị:”bình thường” và “khuyến mại”
+2. Tạo tài liệu XML hợp lệ với đặc tả trên
+-->

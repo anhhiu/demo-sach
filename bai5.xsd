@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bai5"
+    targetNamespace="http://tempuri.org/bai5.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/bai5.xsd"
+    xmlns:mstns="http://tempuri.org/bai5.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:complexType name="sach">
+		<xs:sequence>
+			<xs:element name="idSach" type="xs:string"/>
+			<xs:element name="tenSach" type="xs:string"/>
+			<xs:element name="tenTG" type="xs:string"/>
+			<xs:element name="NXB" type="xs:string"/>
+			<xs:element name="theLoai" type="xs:string"/>
+			<xs:element name="soLuong" type="xs:positiveInteger"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="chitietPhieuMuon">
+		<xs:sequence>
+			<xs:element name="idSach" type="xs:string"/>
+			<xs:element name="idPhieuMuon" type="xs:string"/>
+			<xs:element name="soLuong" type="xs:positiveInteger"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="phieuMuon">
+		<xs:sequence>
+			<xs:element name="idPhieuMuon" type="xs:string"/>
+			<xs:element name="idDocGia" type="xs:string"/>
+			<xs:element name="ngaymuon" type="xs:string"/>
+			<xs:element name="ngaytra" type="xs:string"/>
+			<xs:element name="ctMuon" type="chitietPhieuMuon" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="docGia">
+		<xs:sequence>
+			<xs:element name="idDocGia" type="xs:string"/>
+			<xs:element name="tenDocGia" type="xs:string"/>
+			<xs:element name ="ngaySinh" type="xs:string"/>
+			<xs:element name ="gioiTinh" type="xs:string"/>
+			<xs:element name="diaChi" type="xs:string"/>
+			<xs:element name="sdt" type="xs:string"/>
+			<xs:element name="ngayLapThe" type="xs:string"/>
+			<xs:element name="ngayHetHanThe" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="thuVien">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sachs" type="sach" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element name="phieuMuons" type="phieuMuon" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element name="theDocGia" type="docGia" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+ 

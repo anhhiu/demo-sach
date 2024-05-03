@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<QLSV xmlns="http://tempuri.org/bai4.xsd">
+	<DSSV>
+		<hoten>ha thanh hao</hoten>
+		<ngaysinh> 27/08/2002</ngaysinh>
+		<lop>ktpm k19b</lop>
+		<cacMonHoc>
+			<stt>1</stt>
+			<tenMH>xml</tenMH>
+			<diemhk1>10</diemhk1>
+			<diemhk2>10</diemhk2>
+			<diemCaNam>10.0</diemCaNam>
+		</cacMonHoc>
+		<xlHanhKiem>tot</xlHanhKiem>
+		<xlHocLuc>dang cap</xlHocLuc>
+	</DSSV>
+</QLSV>

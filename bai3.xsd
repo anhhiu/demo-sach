@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bai3"
+    targetNamespace="http://tempuri.org/bai3.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/bai3.xsd"
+    xmlns:mstns="http://tempuri.org/bai3.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:complexType name="ttTacGia">
+		<xs:sequence>
+			<xs:element name="idTG" type="xs:string"/>
+			<xs:element name="tenTG" type="xs:string"/>
+			<xs:element name="diaChi" type="xs:string" minOccurs="0"/>
+			<xs:element name="sdt" type="xs:string" minOccurs="0"/> 
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="loaiSach">
+		<xs:sequence>
+			<xs:element name="tieuDe" type="xs:string"/>
+			<xs:element name="Tacgia" type="ttTacGia" minOccurs="0" maxOccurs="unbounded"/>
+			
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="theLoaiSach">
+		<xs:sequence>
+			<xs:element name="tenTheLoai" type="xs:string"/>
+			<xs:element name="Sach" type="loaiSach" minOccurs="0" maxOccurs="unbounded"/>
+			
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="cuaHangSach">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TheLoai" type="theLoaiSach" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
+<!--Bài 3: Cho cấu trúc XML lưu trữ thông tin những cuốn sách đã được xuất bản theo từng
+lĩnh vực. Mỗi lĩnh vực có tên và có thể chưa có sách xuất bản hoặc cũng có thể đã có nhiều
+cuốn. Mỗi cuốn sách có thông tin một tựa đề duy nhất, một hay nhiều tác giả, mỗi tác giả
+lại có thông tin mã tác giả, tên tác giả, địa chỉ, số điện thoại với mã tác giả, tên tác giả là
+duy nhất cho mỗi người, địa chỉ, số điện thoại có thể không có hoặc chỉ có một thông tin
+độc nhất cho mỗi người
+1. Đặc tả cấu trúc của tài liệu XML
+2. Tạo tài liệu XML hợp lệ với đặc tả trên-->

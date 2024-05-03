@@ -1,0 +1,17 @@
+C:\Users\Admin\source\repos\Sach\Sach\bin\Release\Sach.exe.config
+C:\Users\Admin\source\repos\Sach\Sach\bin\Release\Sach.exe.manifest
+C:\Users\Admin\source\repos\Sach\Sach\bin\Release\Sach.application
+C:\Users\Admin\source\repos\Sach\Sach\bin\Release\Sach.exe
+C:\Users\Admin\source\repos\Sach\Sach\bin\Release\Sach.pdb
+C:\Users\Admin\source\repos\Sach\Sach\bin\Release\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\Sach\Sach\bin\Release\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.Form1.resources
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.Properties.Resources.resources
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.exe.manifest
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.application
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.csproj.CopyComplete
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.exe
+C:\Users\Admin\source\repos\Sach\Sach\obj\Release\Sach.pdb

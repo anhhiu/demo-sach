@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<cuaHang xmlns="http://tempuri.org/bai1.xsd">
+	<sdt>0972156192</sdt>
+	<sanPham >
+		<id>Ab12</id>
+		<name>hao</name>
+		<soluong>200</soluong>
+		<loaihang>binh thuong</loaihang>
+		<dongia>30000</dongia>
+	</sanPham>
+</cuaHang>

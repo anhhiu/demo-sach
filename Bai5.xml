@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<thuVien xmlns="http://tempuri.org/bai5.xsd">
+	<sachs>
+		<idSach>001</idSach>
+		<tenSach>truyen cuoi</tenSach>
+		<tenTG>cu su hao</tenTG>
+		<NXB>chu be du</NXB>
+		<theLoai> hai</theLoai>
+		<soLuong>100</soLuong>
+	</sachs>
+	<phieuMuons>
+		<idPhieuMuon>a1</idPhieuMuon>
+		<idDocGia>aa11</idDocGia>
+		<ngaymuon>20/11/2023</ngaymuon>
+		<ngaytra>20/12/2023</ngaytra>
+		<ctMuon>
+			<idSach>001</idSach>
+			<idPhieuMuon>a1</idPhieuMuon>
+			<soLuong>2</soLuong>
+		</ctMuon>
+	</phieuMuons>
+	<theDocGia>
+		<idDocGia>aa11</idDocGia>
+		<tenDocGia>thanh hao</tenDocGia>
+		<ngaySinh>27/08/2002</ngaySinh>
+		<gioiTinh>nam</gioiTinh>
+		<diaChi>thai nguyen</diaChi>
+		<sdt>0972156192</sdt>
+		<ngayLapThe>20/12/2020</ngayLapThe>
+		<ngayHetHanThe>the co hien luc den vinh vien</ngayHetHanThe>
+	</theDocGia>
+</thuVien>

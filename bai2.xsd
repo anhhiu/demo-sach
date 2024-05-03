@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bai2"
+    targetNamespace="http://tempuri.org/bai2.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/bai2.xsd"
+    xmlns:mstns="http://tempuri.org/bai2.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:complexType name="matHang">
+		<xs:sequence>
+			<xs:element name="idMH" type="xs:string"/>
+			<xs:element name="tenMH" type="xs:string"/>
+			<xs:element name="soluong" type="xs:positiveInteger"/>
+			<xs:element name="dongia" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="khachHang">
+		<xs:sequence>
+			<xs:element name="idKH" type="xs:string"/>
+			<xs:element name="tenKH" type="xs:string"/>
+			<xs:element name="diachi" type="xs:string"/>
+			<xs:element name="qlmatHang" type="matHang" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="DonHang">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="qlKhachHang" type="khachHang" maxOccurs="unbounded"/>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="kieuId">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Za-z]{2}\d{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="kieuDiaChi">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="kieuSoLuong">
+		<xs:restriction base="xs:positiveInteger"/>
+	</xs:simpleType>
+
+	<xs:simpleType name="kieuDonGia">
+		<xs:restriction base="xs:decimal"/>
+	</xs:simpleType>
+	
+</xs:schema>
+<!--Bài 2:
+Mỗi đơn hàng, người ta cần lưu các thông tin sau: Mã khách hàng, tên khách hàng, địa chỉ
+liên lạc và một danh sách những mặt hàng người đó mua. Danh sách mặt hàng gồm có nhiều
+mặt hàng khác nhau, mỗi mặt hàng gồm những thông tin sau: Mã mặt hàng, tên mặt hàng,
+số lượng, đơn giá.
+1. Định nghĩa XMl Schema với yêu cầu như sau:
+MaKH và MaMH: là một chuỗi 4 kí tự trong đó hai kí tự đầu là chữ cái, hai kí tự sau là kí
+số.
+DiaChi: là một chuỗi các kí tự với định dạng như sau: bắt đầu phải là số nhà, sau đến tên
+đường.
+Số lượng và đơn giá là kiểu số và phải là số dương.
+2. Tạo tài liệu XML hợp lệ với đặc tả trên-->

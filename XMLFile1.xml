@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<QLsach xmlns="http://tempuri.org/XMLSchema1.xsd">
+  <sach masach="1">
+    <tensach>haoo</tensach>
+    <soluong>2</soluong>
+    <dongia>2333</dongia>
+  </sach>
+  <sach masach="5">
+    <tensach>uybt</tensach>
+    <soluong>55</soluong>
+    <dongia>98977</dongia>
+  </sach>
+  <sach masach="68">
+    <tensach>tugtuy</tensach>
+    <soluong>5</soluong>
+    <dongia>6666</dongia>
+  </sach>
+  <sach masach="33">
+    <tensach>hhhahaha</tensach>
+    <soluong>6</soluong>
+    <dongia>333</dongia>
+  </sach>
+  <sach masach="ad" >
+    <tensach>wdd33</tensach>
+    <soluong>3</soluong>
+    <dongia>3233</dongia>
+  </sach>
+</QLsach>

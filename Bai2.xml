@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DonHang xmlns="http://tempuri.org/bai2.xsd">
+	<qlKhachHang>
+		<idKH>ab23</idKH>
+		<tenKH>hao</tenKH>
+		<diachi>thai nguyen</diachi>
+		<qlmatHang>
+			<idMH>aa12</idMH>
+			<tenMH>sach</tenMH>
+			<soluong>20</soluong>
+			<dongia>10000</dongia>
+		</qlmatHang>
+	</qlKhachHang>
+</DonHang>
